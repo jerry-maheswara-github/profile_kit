@@ -73,7 +73,7 @@ impl UserProfile {
 }
 
 /// Represents optional personal attributes of a user, such as name and custom fields.
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Default)]
 pub struct UserAttributes {
     /// User's first name.
     #[serde(skip_serializing_if = "Option::is_none")]
